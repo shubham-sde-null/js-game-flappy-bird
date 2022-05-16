@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("./img/background.png");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#game {
+    height: 500px;
+    width: 400px;
+    border: 5px solid rgba(0, 0, 0, 0.74);
+    margin: 1rem auto;
+    overflow: hidden;
+    background: linear-gradient(#b2c7eb, #e0eefb);
+    /* background: url("./img/innerback.jpg"); */
+    background-position: center;
+    background-size: contain;
+}
+
+#block {
+    width: 50px;
+    height: 500px;
+    background-color: greenyellow;
+    position: relative;
+    left: 400px;
+    animation: block 2s linear infinite;
+}
+
+@keyframes block {
+    0% {
+        left: 400px;
+    }
+    100% {
+        left: -50px;
+    }
+}
+
+#hole {
+    height: 150px;
+    width: 50px;
+    /* background-color: #d8e9fa; */
+    background: linear-gradient(#b2c7eb, #e0eefb);
+    /* background: url("./img/innerback.jpg"); */
+    /* background-size: contain; */
+    position: relative;
+    left: 400px;
+    top: -500px;
+    /* Revisit this point it is given with respect to the block which us give  */
+    animation: block 2s linear infinite;
+}
+
+#bird {
+    position: absolute;
+    top: 100px;
+    height: 50px;
+    /* border: 2px solid red; */
+    border: none;
+    /* background-color: #b2c7eb; */
+}
+
+#bird img {
+    height: 50px;
+    width: 50px;
+}
+
+#result {
+    height: 200px;
+    width: 500px;
+    background-color: brown;
+    margin: 5rem auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: none;
+    text-align: center;
+}
+
+#btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 11px;
+    background-color: green;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#test {
+    position: absolute;
+    left: 280px;
+    top: 30px;
+    /* border: 3px solid red */
+    width: fit-content;
+}
+
+#merascore {
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#text {
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 30px;
+    padding-top: 2px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    /* width: fit-content;
+    height: fit-content; */
+}
+
+#result h1 {
+    background-color: yellow;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 20px;
+}
