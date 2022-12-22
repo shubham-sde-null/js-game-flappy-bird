@@ -160,7 +160,7 @@ body {
     .mobileBtn {
         /* border: 2px solid black; */
         position: absolute;
-        bottom: 5rem;
+        bottom: 2.5rem;
         left: 50%;
         transform: translate(-50%, -50%);
         visibility: visible;
